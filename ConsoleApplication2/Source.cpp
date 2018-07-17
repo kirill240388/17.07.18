@@ -1,4 +1,4 @@
-#include<iostream>
+п»ї#include<iostream>
 #include<stdlib.h>
 #include<time.h>
 #include <iomanip>
@@ -25,7 +25,7 @@ int main()
 			}
 			cout << endl;
 		}
-		int max = INT_MIN;//минимальное значение чисел int
+		int max = INT_MIN;//РјРёРЅРёРјР°Р»СЊРЅРѕРµ Р·РЅР°С‡РµРЅРёРµ С‡РёСЃРµР» int
 		for (int i = 0; i < n; i++)
 		{
 			max = INT_MIN;
@@ -34,7 +34,7 @@ int main()
 				if (a[i][j] > max)
 					max = a[i][j];
 			}
-			b[i] = max;//записывает макс. значения в массив b[i]
+			b[i] = max;//Р·Р°РїРёСЃС‹РІР°РµС‚ РјР°РєСЃ. Р·РЅР°С‡РµРЅРёСЏ РІ РјР°СЃСЃРёРІ b[i]
 		}
 
 
@@ -45,7 +45,7 @@ int main()
 		}
 
 
-		for (int pass = 0; pass < n - 1; pass++)// сортировка
+		for (int pass = 0; pass < n - 1; pass++)// СЃРѕСЂС‚РёСЂРѕРІРєР°
 		{
 			for (int k = 0; k < n - 1; k++)
 			{
@@ -61,7 +61,7 @@ int main()
 		cout << endl << endl;
 		for (int i = 0; i < n; i++)
 		{
-			cout << b[i] << " ";//вывод отсортированных макс. значений b[i]
+			cout << b[i] << " ";//РІС‹РІРѕРґ РѕС‚СЃРѕСЂС‚РёСЂРѕРІР°РЅРЅС‹С… РјР°РєСЃ. Р·РЅР°С‡РµРЅРёР№ b[i]
 		}
 
 		cout << "Result matrix:" << endl << endl;
@@ -69,7 +69,7 @@ int main()
 		{
 			for (int j = 0; j < m; j++)
 			{
-				cout << setw(5) << a[i][j];//setw Задает ширину отображения поля для следующего элемента в потоке
+				cout << setw(5) << a[i][j];//setw Р—Р°РґР°РµС‚ С€РёСЂРёРЅСѓ РѕС‚РѕР±СЂР°Р¶РµРЅРёСЏ РїРѕР»СЏ РґР»СЏ СЃР»РµРґСѓСЋС‰РµРіРѕ СЌР»РµРјРµРЅС‚Р° РІ РїРѕС‚РѕРєРµ
 
 			}
 			cout << endl;
